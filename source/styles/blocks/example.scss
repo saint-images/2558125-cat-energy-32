@@ -1,0 +1,13 @@
+.example__wrapper {
+  background-color: #eaeaea;
+}
+
+.example__stats-total-name,
+.example__stats-total-value {
+  font-family: $header-font;
+  color: #000000;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
