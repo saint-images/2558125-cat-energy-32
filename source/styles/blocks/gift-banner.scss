@@ -2,6 +2,13 @@
   background-color: rgba($color: $basic-green, $alpha: 0.85);
 }
 
+.gift-banner__icon {
+  width: 78px;
+  height: 81px;
+  background-size: 78px 81px;
+  background-image: url("../../icons/icon_gift.svg");
+}
+
 .gift-banner__text {
   text-align: center;
   vertical-align: center;

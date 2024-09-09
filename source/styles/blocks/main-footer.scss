@@ -11,3 +11,16 @@
   line-height: 20px;
   color: #444444;
 }
+
+.main-footer__copyright-icon {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    background-size: 27px 34px;
+    background-image: url("../../icons/html-academy-logo.svg");
+  }
+}

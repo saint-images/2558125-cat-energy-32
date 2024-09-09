@@ -18,6 +18,13 @@
   text-align: center;
 }
 
+.card--more .card__image {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  background-image: url("../../icons/plus.svg");
+}
+
 .card--more .card__title-link {
   color: #111111;
 }
