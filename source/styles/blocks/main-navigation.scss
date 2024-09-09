@@ -20,7 +20,8 @@
   position: absolute;
   width: 24px;
   height: 18px;
-  background-size: 24px 18px;
-  background-image: url("../../icons/menu_icon.svg");
+  mask-size: 24px 18px;
+  mask-image: url("../../icons/menu_icon.svg");
+  background-color: #000000;
   cursor: pointer;
 }
