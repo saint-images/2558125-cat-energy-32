@@ -1,0 +1,36 @@
+.feature__icon {
+  display: block;
+  background-color: $basic-green;
+  width: 60px;
+  height: 60px;
+  position: relative;
+
+  &--leaf::after {
+    background-size: 30px 32px;
+    background-image: url("../../icons/icon-leaf.svg");
+  }
+
+  &--powder::after {
+    background-size: 27px 29px;
+    background-image: url("../../icons/icon-powder.svg");
+  }
+
+  &--eat::after {
+    background-size: 26px 30px;
+    background-image: url("../../icons/icon-eat.svg");
+  }
+
+  &--time::after {
+    background-size: 27px 31px;
+    background-image: url("../../icons/icon-time.svg");
+  }
+}
+
+.feature__icon::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+}

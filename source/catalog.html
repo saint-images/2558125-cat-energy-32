@@ -17,10 +17,20 @@
   <header class="main-header">
     <div class="main-header__logo">
       <div class="logo-image main-header__logo-image">
-        <a class="main-header__logo-image-link" href="/"><img src="temp.png" alt="Cat Energy" width="33" height="38"></a>
+        <a class="main-header__logo-image-link" href="/">
+          <picture>
+            <source media="(min-width: 1440px)" width="202" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
+            <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
+          </picture>
+        </a>
       </div>
       <div class="logo-text main-header__logo-text">
-        <a class="main-header__logo-image-link" href="/"><img src="temp.png" alt="Cat Energy" width="33" height="38"></a>
+        <a class="main-header__logo-image-link" href="/">
+          <picture>
+            <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+          </picture>
+        </a>
       </div>
     </div>
     <nav class="main-navigation">
@@ -192,9 +202,7 @@
           </div>
 
           <div class="products-grid__card card card--more">
-            <div class="card__image">
-              <img src="temp.png" alt="Ещё" width="200" height="210">
-            </div>
+            <div class="card__image"></div>
             <h4 class="card__title"><a class="card__title-link" href="product.html">Показать ещё 100500 товаров</a></h4>
             <p class="card__description">На самом деле вкусов гораздо больше!</p>
             <a class="card__button button button--secondary" href="#">Показать все</a>
@@ -243,7 +251,7 @@
           </div>
         </div>
         <div class="gift-banner">
-          <img class="gift-banner__icon" src="temp.png" width="80" height="80" alt="Подарок">
+          <div class="gift-banner__icon"></div>
           <p class="gift-banner__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </div>
@@ -286,26 +294,26 @@
       </div>
     </div>
     <div class="main-footer__links">
-      <div class="main-footer__logo-text logo-text">
-        <img src="temp.png" alt="Cat Energy" width="33" height="38">
-      </div>
+      <a class="main-footer__logo-text logo-text" href="/">
+        <picture>
+          <img src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
       <div class="main-footer__social-icons social-icons">
         <div class="social-icon social-icon--vk">
-          <a class="social-icon__link" href="#"><img src="temp.png" alt="VK" width="28" height="22"></a>
+          <a class="social-icon__link" href="#">VK</a>
         </div>
         <div class="social-icon social-icon--youtube">
-          <a class="social-icon__link" href="#"><img src="temp.png" alt="YouTube" width="28" height="22"></a>
+          <a class="social-icon__link" href="#">YouTube</a>
         </div>
         <div class="social-icon social-icon--telegram">
-          <a class="social-icon__link" href="#"><img src="temp.png" alt="Telegram" width="28" height="22"></a>
+          <a class="social-icon__link" href="#">Telegram</a>
         </div>
       </div>
       <div class="main-footer__copyright">
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="main-footer__copyright-name">HTML Academy</p>
-          <div class="main-footer__copyright-icon">
-            <img src="temp.png" alt="HTML Academy" width="27" height="34">
-          </div>
+          <div class="main-footer__copyright-icon"></div>
         </a>
       </div>
     </div>

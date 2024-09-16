@@ -1,0 +1,31 @@
+.social-icon {
+  width: 28px;
+  height: 22px;
+  mask-size: 28px 22px;
+  background-color: $social-icon-base;
+
+  &--vk {
+    mask-image: url("../../icons/vkontakte.svg");
+  }
+
+  &--youtube {
+    mask-image: url("../../icons/youtube.svg");
+  }
+
+  &--telegram {
+    mask-image: url("../../icons/telegram.svg");
+  }
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 80%;
+  }
+}
+
+.social-icon__link {
+  font-size: 0;
+  position: relative;
+}
