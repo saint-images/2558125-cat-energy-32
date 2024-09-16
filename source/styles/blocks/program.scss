@@ -1,5 +1,17 @@
 .program {
   background-color: $basic-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width-base) and (max-width: ($desktop-width-base - 1)) {
+    padding-right: 250px;
+  }
+}
+
+.program__top {
+  display: flex;
+  flex-direction: row;
 }
 
 .program__icon {
@@ -9,6 +21,21 @@
   width: 50px;
   height: 50px;
   position: relative;
+
+  @media (min-width: $tablet-width-base) and (max-width: ($desktop-width-base - 1)) {
+    position: absolute;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width-base) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .program__title {
@@ -55,6 +82,22 @@
   background-image: url("../../icons/cat-slim.svg");
   top: -3px;
   left: 7px;
+
+  @media (min-width: $tablet-width-base) {
+    width: 140px;
+    height: 194px;
+    background-size: 140px 194px;
+    top: -11px;
+    left: 30px;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    width: 70px;
+    height: 97px;
+    background-size: 70px 97px;
+    top: -6px;
+    left: 15px;
+  }
 }
 
 .program__icon--pro::after {
@@ -64,4 +107,29 @@
   background-image: url("../../icons/cat-pro.svg");
   top: 11px;
   left: -9px;
+
+  @media (min-width: $tablet-width-base) {
+    width: 268px;
+    height: 112px;
+    background-size: 268px 112px;
+    top: 44px;
+    left: -34px;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    width: 134px;
+    height: 56px;
+    background-size: 134px 56px;
+    top: 20px;
+    left: -19px;
+  }
+}
+
+.programs__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width-base) {
+    flex-direction: row;
+  }
 }

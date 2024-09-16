@@ -1,5 +1,25 @@
 .example__wrapper {
   background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width-base) {
+    flex-direction: row;
+  }
+}
+
+.example__stats {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width-base) and (max-width: ($desktop-width-base - 1)) {
+    flex-direction: row;
+  }
+}
+
+.example__stats-generic {
+  display: flex;
+  flex-direction: row;
 }
 
 .example__stats-total-name,

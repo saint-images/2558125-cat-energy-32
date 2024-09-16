@@ -1,7 +1,35 @@
+.feature {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (min-width: $tablet-width-base) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+$elements: 4;
+
+@media (min-width: $tablet-width-base) {
+  @for $i from 0 to $elements {
+    .feature:nth-child(#{$i + 1})::after {
+      content: "#{$i+1}";
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $basic-gray;
+      font-size: 280px;
+      z-index: -1;
+    }
+  }
+}
+
 .feature__icon {
   display: block;
   background-color: $basic-green;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   position: relative;
 

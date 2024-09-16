@@ -1,3 +1,22 @@
+.contact-info__wrapper {
+  position: relative;
+}
+
+.contact-info__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+
+  @media (min-width: $desktop-width-base) {
+    position: absolute;
+    width: 565px;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+  }
+}
+
 .contact-info__header {
   font-family: $header-font;
   color: #111111;
@@ -9,4 +28,29 @@
 
 .contact-info__address {
   line-height: 20px;
+}
+
+.contact-info__map-wrapper {
+  position: relative;
+}
+
+.contact-info__map {
+  width: 100%;
+  height: auto;
+}
+
+.contact-info__map-pin {
+  position: absolute;
+  top: 38.39%;
+  left: 41.87%;
+
+  @media (min-width: $tablet-width-base) {
+    top: 36.5%;
+    left: 43.35%;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    top: 32.75%;
+    left: 63.05%;
+  }
 }

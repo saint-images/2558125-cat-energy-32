@@ -7,21 +7,11 @@
   text-transform: uppercase;
 }
 
-.main-navigation__toggle {
-  position: relative;
-  font-size: 0;
-  background: 0;
-  border: 0;
-  padding: 0;
-}
+.main-navigation__list {
+  list-style: none;
 
-.main-navigation__toggle::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 18px;
-  mask-size: 24px 18px;
-  mask-image: url("../../icons/menu_icon.svg");
-  background-color: #000000;
-  cursor: pointer;
+  @media (min-width: $tablet-width-base) {
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -1,9 +1,19 @@
 .main-footer__copyright-link {
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .main-footer__links {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width-base) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__copyright-name {

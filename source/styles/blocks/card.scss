@@ -1,3 +1,15 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width-base) {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    min-height: 430px;
+  }
+}
+
 .card__title {
   font-family: $header-font;
   font-weight: 400;
@@ -9,6 +21,11 @@
 .card__title-link {
   text-decoration: none;
   color: #222222;
+}
+
+.card__specs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card__spec-name,
@@ -33,4 +50,8 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+}
+
+.card__button {
+  grid-column: 1 / 3;
 }
