@@ -56,13 +56,28 @@
 
 .promo__text-input {
   font-size: 20px;
-  padding: 14px 13px 14px 12px;
+  padding: 13px 13px 11px 12px;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $regular-text;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
 
   @media (min-width: $tablet-width-base) {
     width: 100%;
   }
 }
 
+.promo__text-input,
 .promo__text-input::placeholder {
   color: $regular-text;
   opacity: 1;

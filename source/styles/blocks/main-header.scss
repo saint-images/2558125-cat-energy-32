@@ -28,6 +28,14 @@
 .main-header__logo-image-link {
   line-height: 0;
   display: block;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .main-header__top {

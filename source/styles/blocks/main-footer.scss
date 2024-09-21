@@ -43,6 +43,14 @@
 .main-footer__logo-text {
   display: block;
   line-height: 0;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .main-footer__social-icons {
@@ -79,6 +87,18 @@
     padding: 0;
     width: auto;
   }
+
+  &:hover .main-footer__copyright-icon {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  &:active .main-footer__copyright-icon {
+    background-color: $basic-green;
+  }
 }
 
 .main-footer__copyright-icon {
@@ -90,9 +110,5 @@
 
   &:hover {
     background-color: $basic-green;
-  }
-
-  &:active {
-    opacity: 80%;
   }
 }
