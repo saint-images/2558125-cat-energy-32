@@ -1,14 +1,38 @@
+.guide {
+  padding: 0 $mobile-padding-base;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width-base) {
+    padding: 0 109px 47px $tablet-padding-base;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    padding: 0 $desktop-padding-base 0 $desktop-padding-base;
+  }
+}
+
+.guide__wrapper {
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width-base) {
+    padding-top: 34px;
+  }
+}
+
 .guide__items-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
   @media (min-width: $tablet-width-base) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 38px 139px;
   }
 
   @media (min-width: $desktop-width-base) {
     display: flex;
     flex-direction: row;
+    gap: 81px;
   }
 }

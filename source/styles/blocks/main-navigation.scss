@@ -1,3 +1,80 @@
+.main-navigation {
+  position: relative;
+}
+
+.main-navigation--nojs .main-navigation__wrapper {
+  display: block;
+}
+
+.main-navigation__wrapper {
+  @media (max-width: ($tablet-width-base - 1)) {
+    display: none;
+  }
+}
+
+.main-navigation--opened .main-navigation__wrapper {
+  z-index: 2;
+  background-color: #ffffff;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width-base) {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    padding-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    padding-bottom: 6px;
+  }
+}
+
+.main-navigation__item {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-top: 1px solid $menu-separator-color;
+
+  @media (min-width: $tablet-width-base) {
+    &.main-navigation__item--active {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $basic-green;
+    }
+    border: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    &.main-navigation__item--active {
+      padding-bottom: 8px;
+      border-bottom: 2px solid #ffffff;
+    }
+
+    .page__body--regular &.main-navigation__item--active {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+}
+
+.main-navigation__item:last-child {
+  border-bottom: 1px solid $menu-separator-color;
+
+  @media (min-width: $tablet-width-base) {
+    border: 0;
+  }
+}
+
 .main-navigation__item-link {
   font-family: $header-font;
   font-size: 20px;
@@ -5,13 +82,46 @@
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
-}
+  display: block;
 
-.main-navigation__list {
-  list-style: none;
+  &:hover {
+    color: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &:active {
+    color: rgba($color: #000000, $alpha: 0.3);
+  }
 
   @media (min-width: $tablet-width-base) {
-    display: flex;
-    flex-direction: row;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    font-size: 20px;
+    line-height: auto;
+    color: #ffffff;
+
+    &:hover {
+      color: rgba($color: #ffffff, $alpha: 0.6);
+    }
+
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop-width-base) {
+  .page__body--regular .main-navigation__item-link {
+    color: #000000;
+
+    &:hover {
+      color: rgba($color: #000000, $alpha: 0.6);
+    }
+
+    &:active {
+      color: rgba($color: #000000, $alpha: 0.3);
+    }
   }
 }

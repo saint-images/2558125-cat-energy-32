@@ -1,29 +1,99 @@
+.promo {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width-base) {
+    padding: 72px $tablet-padding-base;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    padding: 70px;
+  }
+}
+
+.promo__wrapper {
+  padding: 32px $mobile-padding-base;
+
+  @media (min-width: $tablet-width-base) {
+    padding: 38px;
+    padding-top: 68px;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    padding: 274px;
+    padding-top: 71px;
+    padding-bottom: 34px;
+  }
+}
+
 .promo__text {
   color: #000000;
   font-family: $header-font;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width-base) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .promo__subscribe-form {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 
   @media (min-width: $tablet-width-base) {
     flex-direction: row;
+    gap: 0;
   }
 }
 
 .promo__text-input {
   font-size: 20px;
+  padding: 13px 13px 11px 12px;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $regular-text;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+  }
+
+  @media (min-width: $tablet-width-base) {
+    width: 100%;
+  }
 }
 
+.promo__text-input,
 .promo__text-input::placeholder {
   color: $regular-text;
   opacity: 1;
+  font-size: 20px;
+  line-height: auto;
+  text-transform: uppercase;
+  font-family: $header-font;
 }
 
 .promo__submit-button {
   border: 0;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px;
+
+  @media (min-width: $tablet-width-base) {
+    min-width: 256px;
+  }
 }

@@ -1,9 +1,29 @@
+.products-grid {
+  padding: 27px 0 0;
+
+  @media (min-width: $tablet-width-base) {
+    padding: 64px $tablet-padding-base 0 $tablet-padding-base;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    padding: 73px $desktop-padding-base 0 $desktop-padding-base;
+  }
+}
+
 .products-grid__header {
+  margin: 0;
   font-family: $header-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #000000;
+  padding: 0 $mobile-padding-base 40px $mobile-padding-base;
+
+  @media (min-width: $tablet-width-base) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 0 166px;
+  }
 }
 
 .products-grid__card-list-wrapper {
@@ -13,10 +33,12 @@
   @media (min-width: $tablet-width-base) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    row-gap: 141px;
   }
 
   @media (min-width: $desktop-width-base) {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 144px 80px;
   }
 }

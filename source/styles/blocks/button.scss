@@ -1,18 +1,34 @@
 .button {
+  display: block;
+  box-sizing: border-box;
   font-family: $header-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .button--primary {
   background-color: $basic-green;
   color: #ffffff;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
 
 .button--secondary {
   background-color: $basic-gray;
   color: $regular-text;
+
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+  }
 }
