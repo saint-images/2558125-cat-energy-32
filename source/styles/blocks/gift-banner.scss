@@ -9,6 +9,13 @@
   background-blend-mode: normal;
   width: 280px;
   height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 59px;
+  padding-bottom: 44px;
+  box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
     background-image:
@@ -31,6 +38,10 @@
       ),
       url("/images/gift-banner-background-tablet@1x.png");
     background-blend-mode: normal;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 79px;
+    padding-right: 124px;
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -54,6 +65,10 @@
       ),
       url("/images/gift-banner-background-desktop@1x.png");
     background-blend-mode: normal;
+    padding: 0;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-bottom: 43px;
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -78,4 +93,16 @@
   text-align: center;
   vertical-align: center;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  max-width: 161px;
+
+  @media (min-width: $tablet-width-base) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    text-align: center;
+  }
 }

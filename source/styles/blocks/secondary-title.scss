@@ -3,6 +3,43 @@
   color: #000000;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width-base) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.additional-products .secondary-title,
+.promo .secondary-title {
+  background-color: #ffffff;
+  padding-left: 20px;
+  width: fit-content;
+  padding-right: 41px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 35px;
+    right: 0;
+    z-index: -1;
+    border-bottom: 2px solid $basic-green;
+    display: block;
+
+    @media (min-width: $tablet-width-base) {
+      top: 87px;
+    }
+  }
+
+  @media (min-width: $tablet-width-base) {
+    padding-left: 40px;
+  }
 }

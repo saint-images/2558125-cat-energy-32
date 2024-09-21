@@ -3,10 +3,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 20px;
 
   @media (min-width: $tablet-width-base) {
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 57px;
   }
 }
 
@@ -17,11 +20,14 @@ $elements: 4;
     .feature:nth-child(#{$i + 1})::after {
       content: "#{$i+1}";
       position: absolute;
-      right: 0;
+      // right: 0;
       top: 0;
+      left: 116px;
       color: $basic-gray;
       font-size: 280px;
+      line-height: 280px;
       z-index: -1;
+      font-family: $header-font;
     }
   }
 }
@@ -32,6 +38,11 @@ $elements: 4;
   min-width: 60px;
   height: 60px;
   position: relative;
+
+  @media (min-width: $tablet-width-base) {
+    min-width: 80px;
+    height: 80px;
+  }
 
   &--leaf::after {
     background-size: 30px 32px;
@@ -61,4 +72,30 @@ $elements: 4;
   width: 60px;
   height: 60px;
   background-position: center;
+
+  @media (min-width: $tablet-width-base) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.feature__description {
+  margin: 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width-base) {
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width-base) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+    width: 244px;
+  }
 }
