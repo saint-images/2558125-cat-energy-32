@@ -5,3 +5,18 @@
   font-weight: 400;
   color: #000000;
 }
+
+.products-grid__card-list-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width-base) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

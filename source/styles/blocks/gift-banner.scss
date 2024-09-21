@@ -1,5 +1,70 @@
 .gift-banner {
   background-color: rgba($color: $basic-green, $alpha: 0.85);
+  background-image:
+    linear-gradient(
+      rgba($basic-green, 0.85),
+      rgba($basic-green, 0.85)
+    ),
+    url("/images/gift-banner-background-mobile@1x.png");
+  background-blend-mode: normal;
+  width: 280px;
+  height: 290px;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(
+        rgba($basic-green, 0.85),
+        rgba($basic-green, 0.85)
+      ),
+      url("/images/gift-banner-background-mobile@2x.png");
+    background-size: 280px 290px;
+  }
+
+  @media (min-width: $tablet-width-base) {
+    width: 707px;
+    height: 200px;
+    background-color: rgba($color: $basic-green, $alpha: 0.85);
+    background-image:
+      linear-gradient(
+        rgba($basic-green, 0.85),
+        rgba($basic-green, 0.85)
+      ),
+      url("/images/gift-banner-background-tablet@1x.png");
+    background-blend-mode: normal;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(
+          rgba($basic-green, 0.85),
+          rgba($basic-green, 0.85)
+        ),
+        url("/images/gift-banner-background-tablet@2x.png");
+      background-size: 707px 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width-base) {
+    width: 245px;
+    height: 288px;
+    background-color: rgba($color: $basic-green, $alpha: 0.85);
+    background-image:
+      linear-gradient(
+        rgba($basic-green, 0.85),
+        rgba($basic-green, 0.85)
+      ),
+      url("/images/gift-banner-background-desktop@1x.png");
+    background-blend-mode: normal;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(
+          rgba($basic-green, 0.85),
+          rgba($basic-green, 0.85)
+        ),
+        url("/images/gift-banner-background-desktop@2x.png");
+      background-size: 245px 288px;
+    }
+  }
 }
 
 .gift-banner__icon {

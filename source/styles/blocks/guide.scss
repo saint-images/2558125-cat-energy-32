@@ -1,0 +1,14 @@
+.guide__items-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width-base) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width-base) {
+    display: flex;
+    flex-direction: row;
+  }
+}

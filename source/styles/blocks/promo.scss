@@ -6,6 +6,15 @@
   line-height: 24px;
 }
 
+.promo__subscribe-form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width-base) {
+    flex-direction: row;
+  }
+}
+
 .promo__text-input {
   font-size: 20px;
 }
