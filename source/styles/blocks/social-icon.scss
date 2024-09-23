@@ -16,7 +16,10 @@
     mask-image: url("../../icons/telegram.svg");
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
     background-color: $basic-green;
   }
 

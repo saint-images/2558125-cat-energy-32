@@ -9,12 +9,6 @@
 }
 
 @media (max-width: ($tablet-width-base - 1)) {
-  .page__body--regular .main-header {
-    border-bottom: 1px solid $footer-separator;
-  }
-}
-
-@media (max-width: ($tablet-width-base - 1)) {
   .main-header__logo {
     display: flex;
     flex-direction: row;
@@ -72,6 +66,10 @@
   @media (max-width: ($tablet-width-base - 1)) {
     display: block;
   }
+}
+
+.main-header__navigation-toggle--nojs {
+  visibility: hidden;
 }
 
 .main-header__navigation-toggle--close {

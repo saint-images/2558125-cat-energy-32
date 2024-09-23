@@ -91,9 +91,22 @@
 .contact-info__map {
   width: 100%;
   height: 100%;
+
+  &.contact-info__map--nojs {
+    display: none;
+  }
+}
+
+.contact-info__map-placeholder {
+  display: none;
+
+  &.contact-info__map-placeholder--nojs {
+    display: block;
+  }
 }
 
 .contact-info__map-pin {
+  display: none;
   position: absolute;
   top: 38.39%;
   left: 41.87%;
@@ -106,5 +119,9 @@
   @media (min-width: $desktop-width-base) {
     top: 32.75%;
     left: 63.05%;
+  }
+
+  &.contact-info__map-pin--nojs {
+    display: block;
   }
 }

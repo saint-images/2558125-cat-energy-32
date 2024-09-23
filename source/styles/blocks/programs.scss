@@ -23,7 +23,7 @@
 
   @media (min-width: $desktop-width-base) {
     padding: 0 $desktop-padding-base 0 $desktop-padding-base;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     gap: 80px;
   }

@@ -17,3 +17,8 @@ navToggle.addEventListener('click', () => {
     navMain.classList.add('main-navigation--opened');
   }
 });
+
+document.querySelector('.contact-info__map-placeholder').classList.remove('contact-info__map-placeholder--nojs');
+document.querySelector('.contact-info__map').classList.remove('contact-info__map--nojs');
+document.querySelector('.contact-info__map-pin').classList.remove('contact-info__map-pin--nojs');
+document.querySelector('.main-header__navigation-toggle').classList.remove('main-header__navigation-toggle--nojs');

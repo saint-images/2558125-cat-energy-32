@@ -1,7 +1,9 @@
 .products-grid {
   padding: 27px 0 0;
+  border-top: 1px solid $footer-separator;
 
   @media (min-width: $tablet-width-base) {
+    border: 0;
     padding: 64px $tablet-padding-base 0 $tablet-padding-base;
   }
 

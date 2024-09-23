@@ -94,7 +94,7 @@
 
   @media (min-width: $desktop-width-base) {
     background-color: unset;
-    height: 500px;
+    min-height: 500px;
     padding: 0;
     padding-left: 190px;
     padding-top: 110px;
