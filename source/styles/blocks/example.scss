@@ -17,12 +17,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 1px $mobile-padding-base 37px $mobile-padding-base;
+  padding: 1px $mobile-padding-base 41px $mobile-padding-base;
   position: relative;
 
   @media (min-width: $tablet-width-base) {
     background-color: unset;
-    padding: 1px $tablet-padding-base 97px $tablet-padding-base;
+    padding: 1px $tablet-padding-base 101px $tablet-padding-base;
     align-items: center;
     gap: 104px;
 
