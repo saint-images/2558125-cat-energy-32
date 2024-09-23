@@ -147,7 +147,7 @@
 }
 
 @media (min-width: $desktop-width-base) {
-  .main-navigation--background .main-navigation__item-link { // кажется, что это надо таки вынести в хедер из хиро (речь про фон с котом). тогда и переполнение глянем
+  .main-navigation--background .main-navigation__item-link {
     color: #ffffff;
 
     &:hover {
