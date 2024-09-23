@@ -4,36 +4,6 @@
   }
 }
 
-.hero::after {
-  @media (min-width: $desktop-width-base) {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 720px;
-    height: 694px;
-    background-color: rgba($basic-green, 0.85);
-    background-image:
-      linear-gradient(
-        rgba($basic-green, 0.85),
-        rgba($basic-green, 0.85)
-      ),
-      url("/images/index-background-desktop@1x.png");
-    background-blend-mode: normal;
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient(
-          rgba($basic-green, 0.85),
-          rgba($basic-green, 0.85)
-        ),
-        url("/images/index-background-desktop@2x.png");
-      background-size: 720px 694px;
-    }
-  }
-}
-
 .hero__wrapper {
   position: relative;
   padding-top: 27px;

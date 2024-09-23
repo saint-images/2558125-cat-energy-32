@@ -2,6 +2,39 @@
   position: relative;
 }
 
+.main-navigation.main-navigation--background::after {
+  @media (min-width: $desktop-width-base) {
+    content: "";
+    position: absolute;
+    top: -74px;
+    right: -110px;
+    z-index: -1;
+    min-width: 720px;
+    width: calc(100% + $desktop-padding-base + 50px);
+    height: 694px;
+    background-color: #515056;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(
+        rgba($basic-green, 0.85),
+        rgba($basic-green, 0.85)
+      ),
+      url("/images/index-background-desktop@1x.png");
+    background-blend-mode: normal;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(
+          rgba($basic-green, 0.85),
+          rgba($basic-green, 0.85)
+        ),
+        url("/images/index-background-desktop@2x.png");
+      background-size: 720px 694px;
+    }
+  }
+}
+
 .main-navigation--nojs .main-navigation__wrapper {
   display: block;
 }
@@ -57,12 +90,12 @@
   @media (min-width: $desktop-width-base) {
     &.main-navigation__item--active {
       padding-bottom: 8px;
-      border-bottom: 2px solid #ffffff;
+      border-bottom: 2px solid $basic-green;
     }
 
-    .page__body--regular &.main-navigation__item--active {
+    .main-navigation--background &.main-navigation__item--active {
       padding-bottom: 8px;
-      border-bottom: 2px solid $basic-green;
+      border-bottom: 2px solid #ffffff;
     }
   }
 }
@@ -100,20 +133,7 @@
   @media (min-width: $desktop-width-base) {
     font-size: 20px;
     line-height: auto;
-    color: #ffffff;
 
-    &:hover {
-      color: rgba($color: #ffffff, $alpha: 0.6);
-    }
-
-    &:active {
-      color: rgba($color: #ffffff, $alpha: 0.3);
-    }
-  }
-}
-
-@media (min-width: $desktop-width-base) {
-  .page__body--regular .main-navigation__item-link { // кажется, что это надо таки вынести в хедер из хиро (речь про фон с котом). тогда и переполнение глянем
     color: #000000;
 
     &:hover {
@@ -122,6 +142,20 @@
 
     &:active {
       color: rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop-width-base) {
+  .main-navigation--background .main-navigation__item-link { // кажется, что это надо таки вынести в хедер из хиро (речь про фон с котом). тогда и переполнение глянем
+    color: #ffffff;
+
+    &:hover {
+      color: rgba($color: #ffffff, $alpha: 0.6);
+    }
+
+    &:active {
+      color: rgba($color: #ffffff, $alpha: 0.3);
     }
   }
 }
