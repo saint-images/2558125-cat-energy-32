@@ -20,7 +20,6 @@ $elements: 4;
     .feature:nth-child(#{$i + 1})::after {
       content: "#{$i+1}";
       position: absolute;
-      // right: 0;
       top: 0;
       left: 116px;
       color: $basic-gray;
