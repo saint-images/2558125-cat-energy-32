@@ -36,21 +36,63 @@
 .slider__curtain {
   position: absolute;
   font-size: 0;
-  border: 0;
   padding: 0;
-  background-color: unset;
+  border: 2px solid $special-gray;
+  border-radius: 2px;
   left: 50%;
   transform: translateX(-50%);
-  width: 40px;
-  height: 256px;
-  background-size: 40px 256px;
-  background-image: url("../../icons/curtain-mobile.svg");
-  background-repeat: no-repeat;
+  height: 100%;
 
-  @media (min-width: $tablet-width-base) {
+  &::before {
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid $special-gray;
+    border-radius: 50%;
     width: 40px;
-    height: 512px;
-    background-size: 40px 512px;
-    background-image: url("../../icons/curtain-tablet.svg");
+    height: 40px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    background-color: $special-gray;
+    mask-image: url("../../icons/curtain-arrows.svg");
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: $basic-green;
+
+    &::before {
+      border-color: $basic-green;
+    }
+
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+    border-color: $basic-green-rgb;
+
+    &::before {
+      border-color: $basic-green;
+    }
+
+    &::after {
+      background-color: $basic-green-rgb;
+    }
   }
 }
